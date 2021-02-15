@@ -1,0 +1,11 @@
+commit a248c9618093bd601607670a67a32b1ef729a19d (HEAD -> master)
+Author: darya <insomniagirl@yandex.by>
+Date:   Mon Feb 15 18:36:19 2021 +0300
+
+    add .gitigrone
+
+commit f3edca689fba6e07c1071a42c365bc210a1e53a0
+Author: darya <insomniagirl@yandex.by>
+Date:   Mon Feb 15 18:34:00 2021 +0300
+
+    add task1/status.txt
