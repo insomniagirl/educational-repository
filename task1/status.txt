@@ -1,0 +1,15 @@
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .idea/.name
+        new file:   .idea/misc.xml
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .idea/modules.xml
+        .idea/vcs.xml
+        .idea/workspace.xml
+        educational practic.iml
