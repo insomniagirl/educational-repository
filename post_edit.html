@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>post_edit</title>
+    <link rel="stylesheet" href="post_edit.css">
+</head>
+
+<body>
+
+    <div class="bigboss">
+        <div class="header" style="grid-area: header">
+
+            <img src="image_icon.svg" style="float:left; margin:0px 0px 0px 5px;">
+            <div class="name_surname"></div>
+            <a href="sign_in.html" class="log_out">Log out</a>
+       
+
+        </div>
+        <div class="middle" style="grid-area: middle">
+            <div class="middle-a">
+           
+                <span class="bl"><label for="photoLink">Picture</label><input type="text" id="photoLink"></span>
+                <span class="bl"><label for="discount">Discount</label><input type="number" id="discount"></span>
+                <span class="bl"><label for="description">Description</label><input type="text" id="description"></span>
+                <span class="bl"><label for="hashtags">Hashtags</label><input type="text" id="hashtags"></span>
+                <span class="bl"><input type="button" value="Сохранить пост" onclick="save(this)"></span>
+
+
+
+
+
+            </div>
+        </div>
+
+        <div class="footer" style="grid-area: footer"> ©2020-2021</div>
+    </div>
+
+</body>
+
+<script src="allphotos.js"></script>
+<script src="viewlist.js"></script>
+<script src="post.js"></script>
+<script src="listener.js"></script>
+<script src="load.js"></script>
+<script>
+    var user = location.search.split('user=')[1];
+if(user==undefined){
+    document.getElementById("top").innerHTML+='<a href="sign_in.html" class="log_in">Log in</a>';
+}
+else
+{
+user=decodeURI(user);
+document.getElementsByClassName("name_surname")[0].innerHTML=user;
+}
+</script>
+
+<script src="postedit.js"></script>
+
+</html>

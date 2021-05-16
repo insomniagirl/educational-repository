@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list of posts</title>
+    <link rel="stylesheet" href="listOfPosts.css">
+</head>
+
+<body>
+    <div class="bigboss">
+        <div class="header" style="grid-area: header" id='top'>
+            <img src="image_icon.svg" style="float:left; margin:0px 0px 0px 5px;">
+            <span class="name_surname"></span> 
+         
+          
+        </div>
+        <div class="left" style="grid-area: left">
+        
+
+                        <legend style="margin: 5px 5px 5px 3px;"></legendstyle>Filter:</legend>
+
+
+
+                        <span class="bl"style="margin: 5px 5px 5px 3px;><label for="tags">By tags</label><input type="text" id="tags"></span>
+                        <span class="bl"style="margin: 5px 5px 5px 3px;><label for="name">By name</label><input type="text" id="name"></span>
+                    
+
+                        <span class="bl"style="margin: 5px 5px 5px 3px;"><input type="submit" value="Отправить" onclick="Sort(this)"></span>
+                        <span class="bl" style="margin: 5px 5px 5px 3px;"><input type="submit" value="Очистить" onclick="SortClear()"></span>
+                    </div>
+
+
+
+
+         <div class="right" style="grid-area: right">
+            <div class="right-list-block">
+ 
+           <div class="right-list">
+               
+            </div>
+        </div>
+            <div class="loading" onclick="showNewElem()"><span>Load more...</span> </div>
+
+
+
+
+
+
+
+        </div>
+
+
+        <div class="footer" style="grid-area: footer"> ©2020-2021</div>
+    </div> 
+    <script  src="allphotos.js"></script>
+   <script src="viewlist.js"></script> 
+   <script  src="post.js"></script>
+    <script src="listener.js"></script>
+    <script src="load.js"></script>
+   <script>
+var user = location.search.split('user=')[1];
+//console.log(user);
+if(user==undefined){
+    document.getElementById("top").innerHTML+='<a href="sign_in.html" class="log_in">Log in</a>';
+}
+else
+{
+    user=decodeURI(user);
+document.getElementsByClassName("name_surname")[0].innerHTML=user;
+document.getElementById("top").innerHTML+='<a href="post_edit.html?user='+user+'" class="post">Add post</a>';
+document.getElementById("top").innerHTML+='<a href="sign_in.html" class="log_out">Log out</a>';
+}
+
+
+
+       Load();
+   Vview.showEl(0,10);
+
+function SortClear(){
+    document.getElementById("name").value='';
+    document.getElementById("tags").value='';
+    Sort();
+}
+
+   </script>
+   <script src="filter.js"></script>
+</body>
+
+</html>

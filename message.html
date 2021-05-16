@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>main</title>
+    <link rel="stylesheet" href="message.css">
+</head>
+
+<body>
+    <div class="bigboss">
+        <div class="header" style="grid-area: header">
+            <img src="image_icon.svg" style="float:left; margin:0px 0px 0px 5px;"></span>
+            <span class="name_surname"></span>
+            <span id="top"></span>
+            <span class="main" onclick="goToPage()" style='cursor: pointer;'>Posts</span>
+            
+           
+           
+        </div>
+
+        <div class="middle" style="grid-area: middle">
+            <div class="middle-a">
+             
+            <div class="exp">describe your own expirience</div>  
+            
+            <span class="bl"><label for="info"></label><input type="text" id="info"></span>
+            <span class="bl"><input type="button" value="post" onclick="Save(this)"></span>
+            </div>
+        </div>
+        <div class="footer" style="grid-area: footer"> ©2020-2021</div>
+    </div>
+    
+    <script>
+   var user = location.search.split('name=')[1];
+console.log(user);
+if(user==undefined){
+   document.getElementById("top").innerHTML+='<a href="sign_in.html" class="log_in">Log in</a>';
+}
+else
+{
+    user=decodeURI(user);
+document.getElementsByClassName("name_surname")[0].innerHTML=user;
+
+
+function goToPage()
+        {
+    
+      document.location.href="post_feed.html?user="+user;
+        
+       }
+
+}
+
+    </script>  
+        
+</body>
+
+
+</html>
