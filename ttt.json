@@ -1,0 +1,216 @@
+{
+	"info": {
+		"_postman_id": "0bf1276c-e8da-4bb0-b4af-c1117a8ee28b",
+		"name": "ttt.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://openlibrary.org/dev/docs/api/books",
+			"request": {
+				"method": "HEAD",
+				"header": [],
+				"url": {
+					"raw": "https://openlibrary.org/dev/docs/api/books",
+					"protocol": "https",
+					"host": [
+						"openlibrary",
+						"org"
+					],
+					"path": [
+						"dev",
+						"docs",
+						"api",
+						"books"
+					]
+				},
+				"description": "получение книг "
+			},
+			"response": []
+		},
+		{
+			"name": "https://openlibrary.org/dev/docs/api/books",
+			"request": {
+				"method": "HEAD",
+				"header": [],
+				"url": {
+					"raw": "https://openlibrary.org/dev/docs/api/books",
+					"protocol": "https",
+					"host": [
+						"openlibrary",
+						"org"
+					],
+					"path": [
+						"dev",
+						"docs",
+						"api",
+						"books"
+					]
+				},
+				"description": "HEAD запрашивает ресурс так же, как и метод GET, но без тела ответа"
+			},
+			"response": []
+		},
+		{
+			"name": "https://openlibrary.org/dev/docs/api/books",
+			"request": {
+				"method": "COPY",
+				"header": [],
+				"url": {
+					"raw": "https://openlibrary.org/dev/docs/api/books",
+					"protocol": "https",
+					"host": [
+						"openlibrary",
+						"org"
+					],
+					"path": [
+						"dev",
+						"docs",
+						"api",
+						"books"
+					]
+				},
+				"description": "Копирует данные через Http"
+			},
+			"response": []
+		},
+		{
+			"name": "https://developer.atlassian.com/cloud/trello/",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "DELETE/https://developer.atlassian.com/cloud/trello/",
+					"protocol": "DELETE/https",
+					"host": [
+						"developer",
+						"atlassian",
+						"com"
+					],
+					"path": [
+						"cloud",
+						"trello",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://developer.atlassian.com/cloud/trello/",
+			"request": {
+				"method": "VIEW",
+				"header": [],
+				"url": {
+					"raw": "https://developer.atlassian.com/cloud/trello/",
+					"protocol": "https",
+					"host": [
+						"developer",
+						"atlassian",
+						"com"
+					],
+					"path": [
+						"cloud",
+						"trello",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://developer.atlassian.com/cloud/trello/",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "https://developer.atlassian.com/cloud/trello/",
+					"protocol": "https",
+					"host": [
+						"developer",
+						"atlassian",
+						"com"
+					],
+					"path": [
+						"cloud",
+						"trello",
+						""
+					]
+				},
+				"description": "PATCH содержит инструкции как мы можем изменить инфу"
+			},
+			"response": []
+		},
+		{
+			"name": "https://circleci.com/docs/api/#circleci-v1-api-overview",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://circleci.com/api/v1.1",
+					"protocol": "https",
+					"host": [
+						"circleci",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1.1"
+					]
+				},
+				"description": "OPTIONS используется для описания параметров соединения с целевым ресурсом"
+			},
+			"response": []
+		},
+		{
+			"name": "https://circleci.com/docs/api/?shell#rate-limiting",
+			"request": {
+				"method": "PROPFIND",
+				"header": [],
+				"url": {
+					"raw": "https://circleci.com/docs/api/?shell#rate-limiting",
+					"protocol": "https",
+					"host": [
+						"circleci",
+						"com"
+					],
+					"path": [
+						"docs",
+						"api",
+						""
+					],
+					"query": [
+						{
+							"key": "shell",
+							"value": null
+						}
+					],
+					"hash": "rate-limiting"
+				},
+				"description": "PROPFIND - используется для извлечения свойств, хранящихся в виде XML, из веб-ресурса. "
+			},
+			"response": []
+		},
+		{
+			"name": "https://circleci.com/api/v1.1",
+			"request": {
+				"method": "LINK",
+				"header": [],
+				"url": {
+					"raw": "https://circleci.com/api/v1.1",
+					"protocol": "https",
+					"host": [
+						"circleci",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1.1"
+					]
+				},
+				"description": "Поле заголовка объекта ссылки предоставляет средства для сериализации одной или нескольких ссылок в заголовках HTTP."
+			},
+			"response": []
+		}
+	]
+}
